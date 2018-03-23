@@ -1,0 +1,77 @@
+@import "http://at.alicdn.com/t/font_602265_e1ggk871q2vjkyb9.css";
+.calendar-container{
+    position: absolute;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+}
+.calendar-top-box{
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+}
+.calendar-top-box .iconfont{
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+}
+.calendar-top-box .icon-prev{
+    left: 5px;
+}
+.calendar-top-box .icon-next{
+    right: 5px;
+}
+.calendar-top-box span{
+    color: #333;
+}
+.calendar-weeks{
+    background: rgb(247, 247, 247);
+    padding: 5px 0;
+}
+.calendar-weeks:after{
+    display: block;
+    clear:both;
+    height:0;
+    content: "";
+    visibility: hidden;
+    overflow:hidden;
+}
+.calendar-weeks span.calendar-week{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 30px;
+    font-weight: bold;
+}
+.calendar-days .calendar-row:after{
+    display: block;
+    clear:both;
+    height:0;
+    content: "";
+    visibility: hidden;
+    overflow:hidden;
+}
+.calendar-days .calendar-row span{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 30px;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+.calendar-days .calendar-row span.calendar-day{
+    cursor: pointer;
+    color: #666;
+}
+.calendar-days .calendar-row span.calendar-today{
+    background: #EF421D;
+    color: #fff;
+}
+.calendar-days .calendar-row span.calendar-day:hover{
+    background: #FFFC8E;
+    color: #666;
+}
+.calendar-days .calendar-row span.calendar-select{
+    background: #FFEA7E;
+}
