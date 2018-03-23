@@ -1,5 +1,6 @@
 # jQuery-calendar
 
+![](calendar.png)
 
 ## API
 
