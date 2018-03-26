@@ -2,6 +2,8 @@
 
 ![](calendar.png)
 
+预览地址： <http://hekiheki.github.io/jQuery-calendar>
+
 ## API
 
 format: 设置日期格式，默认为 'yyyy-MM-dd'
