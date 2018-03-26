@@ -1,6 +1,5 @@
 # jQuery-calendar
 
-预览：<http://hekiheki.github.io/jQuery-calendar>
 
 ![](calendar.png)
 
