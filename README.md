@@ -2,7 +2,6 @@
 
 ![](calendar.png)
 
-预览地址： <http://hekiheki.github.io/jQuery-calendar>
 
 ## API
 
