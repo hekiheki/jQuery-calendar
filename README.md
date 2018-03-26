@@ -4,7 +4,7 @@
 
 ## API
 
-format: 设置日期格式，默认为 'yyyy/MM/dd'
+format: 设置日期格式，默认为 'yyyy-MM-dd'
 
 ## 如何使用
 
