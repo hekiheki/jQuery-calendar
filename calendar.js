@@ -69,17 +69,12 @@
             return CalendarDiv;
         },
         setDays: function(y,m){
-            var daysLength,_this = this,daysSpan="",days=[];
-            if(m==1||m==3||m==5||m==7||m==8||m==10||m==12){
-                daysLength = 31;
-            }else if(m==4||m==6||m==9||m==11){
-                daysLength = 30;
-            }else if(m==2){
-                _this.leapYear(y) ? daysLength = 29 : daysLength=28;
-            }
+            var dateLength = new Date(y,m,0).getDate(), //当月最后一天
+                _this = this,
+                daysSpan="",
+                days=[];
 
-            
-            for(var i=1;i<=daysLength;i++){
+            for(var i=1;i<=dateLength;i++){
                 var dayValue = new Date(y+'-'+m+'-'+i).getDay();
                 days.push({day: dayValue,date: i});    
             }
@@ -98,9 +93,6 @@
                 }
             }
             return '<div class="calendar-row">'+daysSpan+'</div>';
-        },
-        leapYear: function(year){    // 判断闰年
-            return !(year % (year % 100 ? 4 : 400));
         },
         setPosition: function(ele){
             var inputHeight = this.$element.outerHeight(),
